@@ -35,3 +35,27 @@ public class Elevador {
             System.out.println("Ya estás en el primer piso.");
         }
     }
+
+    // Metodo para ir a un piso especifico
+    public void irAPiso(int piso) {
+        if (piso >= 1 && piso <= numeroPisos) {
+            pisoActual = piso;
+            tablero.mostrarEstado(pisoActual, "Estacionado");
+        } else {
+            System.out.println("Piso inválido.");
+        }
+    }
+
+    // Metodos para abrir y cerrar la puerta del elevador
+    public void abrirPuerta() {
+        puertaElevador.abrir();
+    }
+
+    public void cerrarPuerta() {
+        puertaElevador.cerrar();
+    }
+
+    public int getPisoActual() {
+        return pisoActual;
+    }
+}
