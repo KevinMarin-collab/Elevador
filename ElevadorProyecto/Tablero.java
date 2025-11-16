@@ -1,4 +1,4 @@
-package ElevadorProyecto;
+package ProyectoElevador;
 
 public class Tablero {
     private int pisoActual;
@@ -11,6 +11,6 @@ public class Tablero {
     public void mostrarEstado(int pisoActual, String direccion) {
         this.pisoActual = pisoActual;
         this.direccion = direccion;
-        System.out.println("Piso actual: " + pisoActual + " - Dirección: " + direccion);
+        System.out.println("Piso actual: " + pisoActual + " - " + direccion);
     }
 }
