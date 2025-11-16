@@ -1,7 +1,7 @@
-package ProyectoElevador;
+package ElevadorProyecto;
 import java.util.Scanner;
 
-public class ElevadorPrincipal {
+public class ElevadorMain {
 
   public static void main(String[] args) {
     // Crea un elevador con 4 pisos 

@@ -1,4 +1,4 @@
-package ProyectoElevador;
+package ElevadorProyecto;
 
 public class Elevador {
     // Creacion de variables principales del elevador

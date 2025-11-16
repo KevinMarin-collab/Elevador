@@ -1,4 +1,4 @@
-package ProyectoElevador;
+package ElevadorProyecto;
 
 public class Tablero {
     private int pisoActual;

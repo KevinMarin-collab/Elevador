@@ -1,4 +1,4 @@
-package ProyectoElevador;
+package ElevadorProyecto;
 
 public class Puerta {
     private boolean abierta;
