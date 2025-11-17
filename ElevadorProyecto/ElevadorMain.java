@@ -1,7 +1,7 @@
-package ElevadorProyecto;
+package ProyectoElevador;
 import java.util.Scanner;
 
-public class ElevadorMain {
+public class ElevadorPrincipal {
 
   public static void main(String[] args) {
     // Crea un elevador con 4 pisos 
@@ -36,7 +36,8 @@ public class ElevadorMain {
         System.out.println("3. Ir a un piso específico");
         System.out.println("4. Abrir puerta");
         System.out.println("5. Cerrar puerta");
-        System.out.println("6. Salir");
+        System.out.println("6. Mostrar piso actual");
+        System.out.println("7. Salir");
         System.out.println("--- ---- ---");
         int opcion = scanner.nextInt();
         switch (opcion) {
@@ -58,12 +59,15 @@ public class ElevadorMain {
                 elevador.cerrarPuerta();
                 break;
             case 6:
+                System.out.println("Piso actual: " + elevador.getPisoActual());
+                break;
+            case 7:
                 System.out.println("Saliendo...");
                 scanner.close();
                 return;
             default:
                 System.out.println("Opción inválida.");
             }
-        }
+        } 
     }
 }
